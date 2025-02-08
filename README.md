@@ -16,17 +16,13 @@ source .profile
 
 Node Installation
 
-Node Name
-
-Your Node Name
-Port prefix
-
-299
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf atomone
 git clone https://github.com/atomone-hub/atomone
 cd atomone
 git checkout v1.0.0
+```
 
 # Build binary
 make install
