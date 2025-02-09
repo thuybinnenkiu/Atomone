@@ -24,8 +24,10 @@ cd atomone
 git checkout v1.0.0
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.atomone/cosmovisor/genesis/bin
