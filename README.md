@@ -29,9 +29,11 @@ git checkout v1.0.0
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.atomone/cosmovisor/genesis/bin
 ln -s $HOME/.atomone/cosmovisor/genesis $HOME/.atomone/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which atomoned) $HOME/.atomone/cosmovisor/genesis/bin
