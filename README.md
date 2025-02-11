@@ -35,8 +35,10 @@ mkdir -p $HOME/.atomone/cosmovisor/genesis/bin
 ln -s $HOME/.atomone/cosmovisor/genesis $HOME/.atomone/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which atomoned) $HOME/.atomone/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 atomoned config chain-id atomone-1
