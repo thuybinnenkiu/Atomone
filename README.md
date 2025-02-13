@@ -40,11 +40,12 @@ ln -s $HOME/.atomone/cosmovisor/genesis $HOME/.atomone/cosmovisor/current -f
 cp $(which atomoned) $HOME/.atomone/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 atomoned config chain-id atomone-1
 atomoned config keyring-backend file
 atomoned config node tcp://localhost:29957
-
+```
 # Initialize the node
 atomoned init "Your Node Name" --chain-id atomone-1
 
