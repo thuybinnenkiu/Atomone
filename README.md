@@ -46,8 +46,10 @@ atomoned config chain-id atomone-1
 atomoned config keyring-backend file
 atomoned config node tcp://localhost:29957
 ```
-# Initialize the node
+**Initialize the node**
+```
 atomoned init "Your Node Name" --chain-id atomone-1
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/atomone/genesis.json > $HOME/.atomone/config/genesis.json
