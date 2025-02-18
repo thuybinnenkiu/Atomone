@@ -62,8 +62,10 @@ curl -L https://snapshots.nodejumper.io/atomone/addrbook.json > $HOME/.atomone/c
 sed -i -e 's|^seeds *=.*|seeds = "8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656, 10ed1e176d874c8bb3c7c065685d2da6a4b86475@seed-atomone.ibs.team:16684,ebc272824924ea1a27ea3183dd0b9ba713494f83@atomone-mainnet-seed.autostake.com:27396,258f523c96efde50d5fe0a9faeea8a3e83be22ca@seed.atomone-1.atomone.aviaone.com:10293,57e11247cd5c12420c37e68fe3157bc51ca84ca3@mainnet.seednode.citizenweb3.com:26756,f19d9e0f8d48119aa4cafde65de923ae2c29181a@atomone-mainnet-seed.itrocket.net:61656,9dac79c27e4dba77cb22b0b25933fee6c8121cf7@72.46.84.243:26656,ebc272824924ea1a27ea3183dd0b9ba713494f83@atomone-mainnet-peer.autostake.com:27396,eec666a28728bad46a31fd352cc61bc5998efc1d@116.202.156.139:26706,9524bac2c6be4d8b747e6b75d9b924000f9f6835@atomone.peer.stavr.tech:23456"|' $HOME/.atomone/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.006uatone"|' $HOME/.atomone/config/app.toml
+```
 
 # Set pruning
 sed -i \
