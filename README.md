@@ -67,12 +67,14 @@ sed -i -e 's|^seeds *=.*|seeds = "8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.006uatone"|' $HOME/.atomone/config/app.toml
 ```
 
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.atomone/config/app.toml
+```
 
 # Enable prometheus
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.atomone/config/config.toml
