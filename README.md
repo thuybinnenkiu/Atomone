@@ -76,8 +76,10 @@ sed -i \
   $HOME/.atomone/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.atomone/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:29917%; s%:8080%:29980%; s%:9090%:29990%; s%:9091%:29991%; s%:8545%:29945%; s%:8546%:29946%; s%:6065%:29965%" $HOME/.atomone/config/app.toml
