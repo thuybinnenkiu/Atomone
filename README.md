@@ -87,8 +87,10 @@ sed -i -e "s%:1317%:29917%; s%:8080%:29980%; s%:9090%:29990%; s%:9091%:29991%; s
 sed -i -e "s%:26658%:29958%; s%:26657%:29957%; s%:6060%:29960%; s%:26656%:29956%; s%:26660%:29961%" $HOME/.atomone/config/config.toml
 ```
 
-# Download latest chain data snapshot
+**Download latest chain data snapshot**
+```
 curl "https://snapshots.nodejumper.io/atomone/atomone_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.atomone"
+```
 
 # Install Cosmovisor
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
