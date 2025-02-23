@@ -92,8 +92,10 @@ sed -i -e "s%:26658%:29958%; s%:26657%:29957%; s%:6060%:29960%; s%:26656%:29956%
 curl "https://snapshots.nodejumper.io/atomone/atomone_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.atomone"
 ```
 
-# Install Cosmovisor
+**Install Cosmovisor**
+```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
+```
 
 # Create a service
 sudo tee /etc/systemd/system/atomone.service > /dev/null << EOF
