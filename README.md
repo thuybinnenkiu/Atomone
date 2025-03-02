@@ -1,9 +1,9 @@
 Dependencies Installation
-
-**Install dependencies for building from source**
-```
 sudo apt update
 sudo apt install -y curl git jq lz4 build-essential
+```
+
+**Install dependencies for building from source**
 ```
 
 **Install Go**
@@ -144,8 +144,10 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-# add new admin user
+**add new admin user**
+```
 sudo adduser admin --disabled-password -q
+```
 
 # upload public ssh key, replace YOUR_PUBLIC_SSH_KEY with the key above
 mkdir /home/admin/.ssh
